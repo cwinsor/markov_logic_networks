@@ -1,0 +1,192 @@
+
+<!-- saved from url=(0044)https://homes.cs.washington.edu/~pedrod/803/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>10-803: Markov Logic Networks</title>
+
+<style type="text/css">
+table.sample {
+  border-width: 1px 1px 1px 1px;
+  border-spacing: 2px;
+  border-style: none none none none;
+  border-color: gray gray gray gray;
+  border-collapse: separate;
+  background-color: white;
+}
+table.sample th {
+  border-width: 1px 1px 1px 1px;
+  padding: 1px 1px 1px 1px;
+  border-style: groove groove groove groove;
+  border-color: gray gray gray gray;
+  background-color: white;
+  -moz-border-radius: 0px 0px 0px 0px;
+}
+table.sample td {
+  border-width: 1px 1px 1px 1px;
+  padding: 1px 1px 1px 1px;
+  border-style: groove groove groove groove;
+  border-color: gray gray gray gray;
+  background-color: white;
+  -moz-border-radius: 0px 0px 0px 0px;
+}
+</style>
+
+</head>
+
+<body bgcolor="#ffffff">
+
+<hr>
+<h1><font color="blue">10-803: Markov Logic Networks</font></h1>
+<h3>Machine Learning Department, Carnegie Mellon University</h3>
+<hr>
+
+<br>
+
+<big>
+<b>Semester:</b> Fall 2008<br>
+<b>Class meets:</b> Thursdays 3:00-4:20 in Wean Hall 5409<br>
+<b>Instructor:</b> <a href="http://www.cs.washington.edu/homes/pedrod">Pedro Domingos</a><br>
+<b>Office Hours:</b> Thursdays 2:00-3:00<br>
+<b>Office:</b> Wean Hall 5317<br>
+<b>Course Secretary: </b> <a href="http://www.cs.cmu.edu/~sharonw/index.html">Sharon Cavlovich</a><br>
+<b>Mailing List:</b> 10803-students <i>at</i> cs <i>dot</i> cmu <i>dot</i> edu<be>
+</be></big>
+
+
+<h2>Course Summary</h2>
+
+Modern AI/machine learning applications are characterized by high degrees of complexity and uncertainty. Complexity is well handled by first-order logic, and uncertainty by probabilistic graphical models. What has been sorely missing is a seamless combination of the two. Markov logic networks (MLNs) provide this by attaching weights to logical formulas and treating them as templates for features of Markov random fields. This course covers MLN representation, inference, learning and applications. Inference techniques covered include satisfiability testing, auxiliary-variable MCMC, and lifted belief propagation. Learning includes voted perceptrons, second-order techniques, pseudo-likelihood, inductive logic programming, predicate invention, and transfer learning. Applications include information extraction and integration, natural language processing, robot mapping, social networks, computational biology, and others. The algorithms covered are available in the open-source Alchemy package (alchemy.cs.washington.edu). In the class project, students will apply Alchemy to problems they're interested in, or develop new inference or learning algorithms for MLNs using the Alchemy infrastructure. The class is intended for graduate students (MS or PhD). Previous knowledge of AI/ML (particularly logic and probability) is helpful, but not necessary; the class is designed to be self-contained.
+
+
+<h2>Schedule</h2>
+
+<table class="sample">
+  <tbody><tr> 
+    <th><b>Date</b></th>
+    <th><b>Topics &amp; Slides</b></th>
+    <th><b>Readings</b></th>
+    <th><b>Project</b></th>
+  </tr> 
+  <tr>
+    <td>Sept. 11</td> 
+      <td><a href="https://homes.cs.washington.edu/~pedrod/803/slides/intro.ppt">Introduction</a></td>
+      <td>Chapter 1</td>
+      <td>-</td>
+  </tr> 
+  <tr>
+    <td>Sept. 18</td> 
+      <td><a href="https://homes.cs.washington.edu/~pedrod/803/slides/markov.ppt">Markov networks</a></td>
+      <td>Section 2.2 </td>
+      <td>-</td>
+  </tr> 
+  <tr>
+    <td>Sept. 25</td> 
+      <td><a href="https://homes.cs.washington.edu/~pedrod/803/slides/fol.ppt">First-order logic and inductive logic programming</a></td>
+      <td>Section 2.1 </td>
+      <td>-</td>
+  </tr> 
+  <tr>
+    <td>Oct. 2</td> 
+      <td><a href="https://homes.cs.washington.edu/~pedrod/803/slides/marklog.ppt">Markov logic and other SRL approaches</a></td>
+      <td>Sections 2.3 and 2.4</td>
+      <td>-</td>
+  </tr> 
+  <tr>
+    <td>Oct. 9</td> 
+      <td><a href="https://homes.cs.washington.edu/~pedrod/803/slides/marklog.ppt">Markov logic (contd.)</a></td>
+      <td>Sections 2.3 and 2.4</td>
+      <td>Proposals due</td>
+  </tr> 
+  <tr>
+    <td>Oct. 16</td> 
+      <td><a href="https://homes.cs.washington.edu/~pedrod/803/slides/apps.ppt">Applications of Markov logic</a></td>
+      <td>Chapter 6, <a href="http://alchemy.cs.washington.edu/tutorial/tutorial.pdf">Alchemy tutorial</a></td>
+      <td>-</td>
+  </tr> 
+  <tr>
+    <td>Oct. 23</td> 
+      <td><a href="https://homes.cs.washington.edu/~pedrod/803/slides/wlearn.ppt">Weight learning</a></td>
+      <td>Section 4.1</td>
+      <td>-</td>
+  </tr> 
+  <tr>
+    <td>Oct. 30</td> 
+      <td><a href="https://homes.cs.washington.edu/~pedrod/803/slides/apps.ppt">Applications of Markov logic (contd.)</a></td>
+      <td>Chapter 6, <a href="http://alchemy.cs.washington.edu/tutorial/tutorial.pdf">Alchemy tutorial</a></td>
+      <td>-</td>
+  </tr> 
+  <tr>
+    <td>Nov. 6</td> 
+      <td><a href="https://homes.cs.washington.edu/~pedrod/803/slides/infer.ppt">Inference</a></td>
+      <td>Chapter 3</td>
+      <td>Progress reports due</td>
+  </tr> 
+  <tr>
+    <td>Nov. 13</td> 
+      <td><a href="https://homes.cs.washington.edu/~pedrod/803/slides/infer.ppt">Inference (contd.)</a></td>
+      <td>Chapter 3</td>
+      <td>-</td>
+  </tr> 
+  <tr>
+    <td>Nov. 20</td> 
+      <td><a href="https://homes.cs.washington.edu/~pedrod/803/slides/slearn.ppt">Structure learning</a></td>
+      <td>Sections 4.2, 4.3 and 4.4</td>
+       <td>-</td>
+  </tr> 
+<!--
+  <tr>
+    <td>Nov. 20</td> 
+      <td><a href="slides/exts.ppt">Extensions of Markov logic</a></td>
+      <td>Chapter 5</td>
+      <td>-</td>
+  </tr>
+--> 
+  <tr>
+    <td>Nov. 27</td> 
+      <td>Thanksgiving (no lecture)</td>
+      <td>-</td>
+      <td>-</td>
+  </tr> 
+  <tr>
+    <td>Dec. 4</td> 
+      <td>Project presentations</td>
+      <td>-</td>
+      <td>Final reports due</td>
+  </tr> 
+</tbody></table>
+
+
+<h2>Textbook</h2>
+
+Pedro Domingos and Daniel Lowd, <i>Markov Logic: An Interface Layer for AI</i>, Morgan &amp; Claypool, 2008.<br>
+(This book has not been published yet; it will be distributed to the class.)
+
+
+<h2>Software</h2>
+
+The MLN algorithms covered in class are implemented in the <a href="http://alchemy.cs.washington.edu/">Alchemy</a> package.
+
+
+<h2>Project</h2>
+
+Class evaluation will be by means of a project. Projects can be done individually or in groups of two (or more, with permission of the instructor). Possible projects include applying MLNs in a domain of interest to you and developing new MLN algorithms.
+
+
+
+
+<script>mendeleyWebImporter = {
+  downloadPdfs(e,t) { return this._call('downloadPdfs', [e,t]); },
+  open() { return this._call('open', []); },
+  setLoginToken(e) { return this._call('setLoginToken', [e]); },
+  _call(methodName, methodArgs) {
+    const id = Math.random();
+    window.postMessage({ id, token: '0.2745584785974535', methodName, methodArgs }, 'https://homes.cs.washington.edu');
+    return new Promise(resolve => {
+      const listener = window.addEventListener('message', event => {
+        const data = event.data;
+        if (typeof data !== 'object' || !('result' in data) || data.id !== id) return;
+        window.removeEventListener('message', listener);
+        resolve(data.result);
+      });
+    });
+  }
+};</script></body></html>
