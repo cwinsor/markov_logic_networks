@@ -1,4 +1,5 @@
 # markov_logic_networks
-Markov Logic Networks - materials and experiments including Pedro Domingos' CMU 10-803 class from 2008
+This git has:
+* a copy of Pedro Domingos' class materials from 2008 CMU 10-803  (.ppts and other materials) https://homes.cs.washington.edu/~pedrod/803/
+* (future) code examples and/or experiments in MLN based on above
 
-https://homes.cs.washington.edu/~pedrod/803/
