@@ -2,8 +2,8 @@
 This git has:
 * a copy of Pedro Domingos' class materials from 2008 CMU 10-803  (.ppts and other materials) https://homes.cs.washington.edu/~pedrod/803/
 
-Other info you may find interesting:
-# Alchemy - a toolset around MLN that lets you build/experiment.
+# Related work:
+"alchemy_1_cwinsor" is a git with slides and the Alchemy tool (with bugfixes). From this you can build and experiment with Markov Logic Networks!
 
 Slides:
 * https://github.com/cwinsor/alchemy_1_cwinsor/blob/main/markov_logic_networks_intro.pdf
@@ -11,4 +11,4 @@ Slides:
 
 Code: 
 * https://github.com/cwinsor/alchemy_1_cwinsor
-* it is a fork of U. Washington to fix "code rot" - it didn't compile due to changes in GNU libraries. Minor changes only.
+* (the code is a fork of U. Washington source. It fixes "code rot" due to changes in subordinate GNU libraries. Minor changes only)
